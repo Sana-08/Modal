@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+.main {
+    height: 15rem;
+    width: 35rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    text-align: center;
+    margin-left: 35rem;
+    margin-top: 15rem;
+}
+
+.btn {
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: #49A6E9;
+    cursor: pointer;
+    border: dotted red;
+    font-size: 1rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.overlay.open-modal {
+    visibility: visible;
+    opacity: 1;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+h2 {
+    visibility: visible;
+
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgb(122, 11, 11);
+    font-size: 2rem;
+    font-weight: 2rem;
+}
+
+.close:hover{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.fa-times {
+    display: inline;
+}
+
+h2{
+    height: 5rem;
+    width: 20rem;
+    font-size: 2rem;
+}
